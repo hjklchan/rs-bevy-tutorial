@@ -5,3 +5,18 @@ edition = "2021"
 
 [dependencies]
 bevy = "0.14.2"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[[example]]
+name = "01_introduction"
+
+[[example]]
+name = "02_resources"
+
+[[example]]
+name = "03_bundles"
